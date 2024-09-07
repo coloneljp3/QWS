@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+
+<html>
+
+<script>
+
+var POC_list = [];
+var word_list = [];
+
+var construct = document.getElementById("c_value").value;
+
+class Word{
+
+constructor(sim, def, ch, type, ref){
+this.sim = sim;
+this.def = def;
+this.ch = ch;
+this.type = type;
+this.ref = ref;
+
+}
+
+}
+
+
+function categ(construct){
+POC_list.push(construct.split(" "));
+for(let i of POC_list){
+for(let a of i){
+
+for(let z of construct.split(" ")){
+if(a == z){
+
+z.ref.push(i)
+
+}
+
+}
+
+
+
+}
+
+
+}
+
+for(let i of word_list){
+if
+
+
+}
+
+
+}
+</script>
+
+<input id = "c_value" placeholder = "Type in the construct" name = "construct"/>
+<button style = "width:100px;height:30px;"  onclick = ""></button>
+
+
+
+
+</html>
+
+
