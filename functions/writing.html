@@ -7,6 +7,10 @@
 var POC_list = [];
 var word_list = [];
 
+class POC {
+
+  
+}
 
 class Word{
 
@@ -19,40 +23,13 @@ this.ref = ref;
 
 }
 
+
+  
+
 }
 
 var construct = document.getElementById("c_value").value;
 function categ(){
-var POC_counter = 0;
-for(let i of construct.split(" ")){
-word_list.push({i:new Word()});
-
-};
-POC_list.push(construct.split(" "));
-for(let i of POC_list){
-for(let a of i){
-
-for(let z of construct.split(" ")){
-if(a == z){
-
-z.ref.push(i);
-POC_counter++;
-}
-
-
-else{continue;}}
-
-
-
-}
-
-
-
-}
-
-
-
-document.getElementById("c_value").value = word_list;
 }
 
 
