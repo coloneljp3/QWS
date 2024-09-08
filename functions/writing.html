@@ -4,22 +4,63 @@
 
 <script>
 
-var POC_list = [];
 var word_list = [];
 
-class POC {
+class ref{
 
+
+  
+}
   
 }
 
 class Word{
 
-constructor(sim, def, ch, type, ref){
+constructor(word,pos, sim, def, ch, type, ref){
+this.word = word
 this.sim = sim;
+this.pos = pos;
+this.construct = construct;
 this.def = def;
 this.ch = ch;
 this.type = type;
 this.ref = ref;
+
+  checkPunc(){
+    var eow = word[(word.length-1)]
+    if(eow == "."){
+    pos = "last word in sentence"
+      
+    };
+
+    if(eow == "!"){
+    pos = "last word in sentence"
+      
+    };
+
+    
+    if(eow == "?"){
+    pos = "last word in sentence"
+
+      
+    };
+
+    
+  
+}
+    
+  };
+
+
+  
+  checkPos(){};
+
+  
+  checkRef(){};
+  checkSim(){};
+  checkDef(){};
+  checkCharge(){};
+  checkType(){};
 
 }
 
