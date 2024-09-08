@@ -7,7 +7,6 @@
 var POC_list = [];
 var word_list = [];
 
-var construct = document.getElementById("c_value").value;
 
 class Word{
 
@@ -22,8 +21,13 @@ this.ref = ref;
 
 }
 
+var construct = document.getElementById("c_value").value;
+function categ(){
+var POC_counter = 0;
+for(let i of construct.split(" ")){
+word_list.push({i:new Word()});
 
-function categ(construct){
+};
 POC_list.push(construct.split(" "));
 for(let i of POC_list){
 for(let a of i){
@@ -31,35 +35,34 @@ for(let a of i){
 for(let z of construct.split(" ")){
 if(a == z){
 
-z.ref.push(i)
-
-}
-
-}
-
-
-
+z.ref.push(i);
+POC_counter++;
 }
 
 
-}
+else{continue;}}
 
-for(let i of word_list){
-if
 
 
 }
 
 
+
 }
+
+
+
+document.getElementById("c_value").value = word_list;
+}
+
+
 </script>
 
 <input id = "c_value" placeholder = "Type in the construct" name = "construct"/>
-<button style = "width:100px;height:30px;"  onclick = ""></button>
+<button style = "width:100px;height:30px;"  onclick = "categ()">Click Me</button>
 
 
 
 
 </html>
-
 
